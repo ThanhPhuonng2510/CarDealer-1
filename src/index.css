@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 body {
-  @apply font-poppins bg-gray-400;
+  @apply font-poppins ;
+  height: 100vh;
 }
 
 body {
