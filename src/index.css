@@ -6,6 +6,7 @@
 
 body {
   @apply font-poppins ;
+  height: 100vh;
 }
 
 body {

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {HiMenu, HiMenuAlt3} from "react-icons/hi";
+import {HiMenu, HiMenuAlt2, HiMenuAlt3} from "react-icons/hi";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
@@ -35,7 +35,7 @@ const SideBar = () => {
             <div className="py-3 flex justify-end">
                 <button  onClick={click}>
                     {
-                        isPasswordShow?  <HiMenu size={26} className="cursor-pointer"/> : <HiMenuAlt3 size={26} className="cursor-pointer" />
+                     isPasswordShow?  <HiMenu size={26} className="cursor-pointer"/> : <HiMenuAlt3 size={26} className="cursor-pointer" />
                     }
 
                 </button>
@@ -71,8 +71,8 @@ const SideBar = () => {
                     })}
                 </div>
             </ul>
-            <div className="mx-8 col-end-auto">
-                <p className={` inset-x-0  h-16 whitespace-pre duration-1000 ${!open && "opacity-0 translate-x-28 overflow-hidden"}`}>
+            <div className="relative h-80 w-32">
+                <p className={`absolute inset-x-0 left-8 bottom-0 h-16 whitespace-pre duration-1000 ${!open && "opacity-0 translate-x-28 overflow-hidden"}`}>
                     CAR STORE DEVELOPER</p>
             </div>
         </div>
